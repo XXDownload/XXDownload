@@ -12,7 +12,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 XXDownload is a tool that can download task in foreground and background.
 ## Requirements
 iOS8.0
-##USEAGE
+## USEAGE
 1.Import
 
 ```
