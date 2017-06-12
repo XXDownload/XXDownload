@@ -9,6 +9,7 @@
 #import "XXAppDelegate.h"
 #import "XXDownload.h"
 #import "XXViewController.h"
+#import "XXDownloadDBHelper.h"
 
 @implementation XXAppDelegate
 
@@ -20,7 +21,6 @@
     [application registerUserNotificationSettings:settings];
     //设置应用程序的图标右上角的数字
     application.applicationIconBadgeNumber = 0;
-    [XXDownloadManager sharedManager].showLog = NO;
     [XXDownloadManager sharedManager].dbHelper = [[XXDownloadDBHelper alloc] init];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

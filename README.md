@@ -8,8 +8,68 @@
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
+#WHAT
+XXDownload is a tool that can download task in foreground and background.
 ## Requirements
+iOS8.0
+##USEAGE
+1.Import
+
+```
+#import <XXDownload.h>
+```
+
+2.In Appdelegate.m add the below code
+
+```
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Override point for customization after application launch.
+    /*
+    Here the dbHelper can implement by yourself,it must conformsToProtocol XXDownloadDBDelegate
+    */
+   [XXDownloadManager sharedManager].dbHelper = [[XXDownloadDBHelper alloc] init];
+   
+   return YES;
+}
+
+- (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)())completionHandler {
+    
+    [[XXDownloadManager sharedManager] addFinishBlock:completionHandler identifier:identifier];
+}
+
+```
+
+3.Task Operation
+
+a.add Task
+
+```
+ XXDownloadTask *dTask = [XXDownloadTask taskWithId:taskId name:name type:type url:url size:0];
+ 
+ [[XXDownloadManager sharedManager] addTask:dTask];
+```
+b.start Task
+
+```
+[[XXDownloadManager sharedManager] startTask:task];
+```
+c.pause Task
+
+```
+[[XXDownloadManager sharedManager] pauseTask:task];
+```
+d.delete Task
+
+```
+[[XXDownloadManager sharedManager] deleteTask:model];
+```
+
+4.CallBack
+
+Object that conforms XXDownloadTaskDelegate can show the downloading task`s progress and the downloading state.
+
+Object that conforms XXDownloadTaskSetUpDelegate can configure the task before the task beginning.
+
 
 ## Installation
 
@@ -19,7 +79,6 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "XXDownload"
 ```
-
 ## Author
 
 yangzi, 595919268@qq.com
