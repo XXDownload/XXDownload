@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "summary": "This is a download tool",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/XXDownload/XXDownload.git",
+  "homepage": "https://github.com/XXDownload/XXDownload",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "acct<blob>=0xE7BE8AE5AD90": "595919268@qq.com"
+    "yangzi": "595919268@qq.com"
   },
   "source": {
     "git": "https://github.com/XXDownload/XXDownload.git",
