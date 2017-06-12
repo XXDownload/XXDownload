@@ -1,10 +1,17 @@
-#ifdef __OBJC__
-#import <UIKit/UIKit.h>
-#endif
+//
+//  Header.h
+//  Pods
+//
+//  Created by xby on 2017/6/12.
+//
+//
 
-#import "NSData+NSURLSessionResumeData.h"
-#import "XXDownload.h"
+#ifndef Header_h
+#define Header_h
+
+#import "XXDataBaseTool.h"
 #import "XXDownloadDBDelegate.h"
+#import "XXDownloadDBHelper.h"
 #import "XXDownloadEnum.h"
 #import "XXDownloadManager.h"
 #import "XXDownloadModel.h"
@@ -13,7 +20,7 @@
 #import "XXDownloadTaskDelegate.h"
 #import "XXDownloadTaskSetUpDelegate.h"
 #import "XXDownloadTool.h"
+#import "NSData+NSURLSessionResumeData.h"
 
-FOUNDATION_EXPORT double XXDownloadVersionNumber;
-FOUNDATION_EXPORT const unsigned char XXDownloadVersionString[];
 
+#endif /* Header_h */

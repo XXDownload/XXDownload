@@ -1,9 +1,9 @@
 {
   "name": "XXDownload",
   "version": "0.1.0",
-  "summary": "A short description of XXDownload.",
+  "summary": "This is a download tool",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/acct<blob>=0xE7BE8AE5AD90/XXDownload",
+  "homepage": "https://github.com/XXDownload/XXDownload.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "acct<blob>=0xE7BE8AE5AD90": "595919268@qq.com"
   },
   "source": {
-    "git": "https://github.com/acct<blob>=0xE7BE8AE5AD90/XXDownload.git",
+    "git": "https://github.com/XXDownload/XXDownload.git",
     "tag": "0.1.0"
   },
   "platforms": {

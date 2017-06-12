@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5722A2CA1EEEA2EE00F93E00 /* XXDownloadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5722A2C71EEEA2EE00F93E00 /* XXDownloadCell.m */; };
+		5722A2CB1EEEA2EE00F93E00 /* XXDownloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5722A2C91EEEA2EE00F93E00 /* XXDownloadController.m */; };
+		5722A2CD1EEEA4B900F93E00 /* videoList.json in Resources */ = {isa = PBXBuildFile; fileRef = 5722A2CC1EEEA4B900F93E00 /* videoList.json */; };
+		5722A2D21EEEA6D800F93E00 /* XXDataBaseTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5722A2CF1EEEA6D800F93E00 /* XXDataBaseTool.m */; };
+		5722A2D31EEEA6D800F93E00 /* XXDownloadDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5722A2D11EEEA6D800F93E00 /* XXDownloadDBHelper.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -21,7 +26,6 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		EC32AB5B75D4A6BB4B9CFE57 /* Pods_XXDownload_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E4F5FFD30BA4679ACFB9CA /* Pods_XXDownload_Tests.framework */; };
 		F3D48A3328AF7F156A10B9F8 /* Pods_XXDownload_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3FA492921FFF8E49965A2A3 /* Pods_XXDownload_Example.framework */; };
 /* End PBXBuildFile section */
@@ -38,7 +42,16 @@
 
 /* Begin PBXFileReference section */
 		035EEA0BE7AF29A322C996D7 /* Pods-XXDownload_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXDownload_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XXDownload_Example/Pods-XXDownload_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		3B7DBCE7AAD3F4CB98C6D467 /* XXDownload.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = XXDownload.podspec; path = ../XXDownload.podspec; sourceTree = "<group>"; };
+		3B7DBCE7AAD3F4CB98C6D467 /* XXDownload.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XXDownload.podspec; path = ../XXDownload.podspec; sourceTree = "<group>"; };
+		5722A2C61EEEA2EE00F93E00 /* XXDownloadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXDownloadCell.h; sourceTree = "<group>"; };
+		5722A2C71EEEA2EE00F93E00 /* XXDownloadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXDownloadCell.m; sourceTree = "<group>"; };
+		5722A2C81EEEA2EE00F93E00 /* XXDownloadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXDownloadController.h; sourceTree = "<group>"; };
+		5722A2C91EEEA2EE00F93E00 /* XXDownloadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXDownloadController.m; sourceTree = "<group>"; };
+		5722A2CC1EEEA4B900F93E00 /* videoList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videoList.json; sourceTree = "<group>"; };
+		5722A2CE1EEEA6D800F93E00 /* XXDataBaseTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXDataBaseTool.h; sourceTree = "<group>"; };
+		5722A2CF1EEEA6D800F93E00 /* XXDataBaseTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXDataBaseTool.m; sourceTree = "<group>"; };
+		5722A2D01EEEA6D800F93E00 /* XXDownloadDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXDownloadDBHelper.h; sourceTree = "<group>"; };
+		5722A2D11EEEA6D800F93E00 /* XXDownloadDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXDownloadDBHelper.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* XXDownload_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXDownload_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,10 +74,9 @@
 		62098D0F25B0866C7354D1BA /* Pods-XXDownload_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXDownload_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XXDownload_Tests/Pods-XXDownload_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71D998348FA3F63C299F238B /* Pods-XXDownload_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXDownload_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-XXDownload_Example/Pods-XXDownload_Example.release.xcconfig"; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D5623E5974678B8B72FC639 /* Pods-XXDownload_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXDownload_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XXDownload_Tests/Pods-XXDownload_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C8D1CAE977D4739DBA5EE5EC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		D5F026382D2591A81C22FE62 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C8D1CAE977D4739DBA5EE5EC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D5F026382D2591A81C22FE62 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E3FA492921FFF8E49965A2A3 /* Pods_XXDownload_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XXDownload_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E4F5FFD30BA4679ACFB9CA /* Pods_XXDownload_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XXDownload_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -143,11 +155,19 @@
 		6003F593195388D20070C39A /* Example for XXDownload */ = {
 			isa = PBXGroup;
 			children = (
+				5722A2CC1EEEA4B900F93E00 /* videoList.json */,
+				5722A2CE1EEEA6D800F93E00 /* XXDataBaseTool.h */,
+				5722A2CF1EEEA6D800F93E00 /* XXDataBaseTool.m */,
+				5722A2D01EEEA6D800F93E00 /* XXDownloadDBHelper.h */,
+				5722A2D11EEEA6D800F93E00 /* XXDownloadDBHelper.m */,
 				6003F59C195388D20070C39A /* XXAppDelegate.h */,
 				6003F59D195388D20070C39A /* XXAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* XXViewController.h */,
 				6003F5A6195388D20070C39A /* XXViewController.m */,
+				5722A2C61EEEA2EE00F93E00 /* XXDownloadCell.h */,
+				5722A2C71EEEA2EE00F93E00 /* XXDownloadCell.m */,
+				5722A2C81EEEA2EE00F93E00 /* XXDownloadController.h */,
+				5722A2C91EEEA2EE00F93E00 /* XXDownloadController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -250,6 +270,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "acct<blob>=0xE7BE8AE5AD90";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 3FNX44KFW5;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -279,8 +302,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				5722A2CD1EEEA4B900F93E00 /* videoList.json in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -309,7 +332,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		01CE723E65B80B09685C42D2 /* [CP] Copy Pods Resources */ = {
@@ -369,7 +392,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		EC98C9CE4F66C75020CE911C /* [CP] Embed Pods Frameworks */ = {
@@ -394,9 +417,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5722A2D21EEEA6D800F93E00 /* XXDataBaseTool.m in Sources */,
 				6003F59E195388D20070C39A /* XXAppDelegate.m in Sources */,
+				5722A2CA1EEEA2EE00F93E00 /* XXDownloadCell.m in Sources */,
+				5722A2D31EEEA6D800F93E00 /* XXDownloadDBHelper.m in Sources */,
 				6003F5A7195388D20070C39A /* XXViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				5722A2CB1EEEA2EE00F93E00 /* XXDownloadController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,9 +551,11 @@
 			baseConfigurationReference = 035EEA0BE7AF29A322C996D7 /* Pods-XXDownload_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3FNX44KFW5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XXDownload/XXDownload-Prefix.pch";
 				INFOPLIST_FILE = "XXDownload/XXDownload-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -539,9 +568,11 @@
 			baseConfigurationReference = 71D998348FA3F63C299F238B /* Pods-XXDownload_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3FNX44KFW5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XXDownload/XXDownload-Prefix.pch";
 				INFOPLIST_FILE = "XXDownload/XXDownload-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

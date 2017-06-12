@@ -7,12 +7,31 @@
 //
 
 #import "XXAppDelegate.h"
+#import "XXDownload.h"
+#import "XXViewController.h"
 
 @implementation XXAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    //注册通知
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound categories:nil];
+    [application registerUserNotificationSettings:settings];
+    //设置应用程序的图标右上角的数字
+    application.applicationIconBadgeNumber = 0;
+    [XXDownloadManager sharedManager].showLog = NO;
+    [XXDownloadManager sharedManager].dbHelper = [[XXDownloadDBHelper alloc] init];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    XXViewController *rootVC = [[XXViewController alloc] init];
+    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:rootVC];
+    self.window.rootViewController = navi;
+    
+    
     return YES;
 }
 
@@ -42,5 +61,10 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+- (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)())completionHandler {
+    
+    [[XXDownloadManager sharedManager] addFinishBlock:completionHandler identifier:identifier];
+}
+
 
 @end
