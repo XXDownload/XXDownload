@@ -22,7 +22,7 @@ pod "XXDownload"
 
 ## Author
 
-acct<blob>=0xE7BE8AE5AD90, 595919268@qq.com
+yangzi, 595919268@qq.com
 
 ## License
 
