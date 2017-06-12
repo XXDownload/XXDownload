@@ -1,0 +1,16 @@
+PODS:
+  - XXDownload (0.1.0)
+
+DEPENDENCIES:
+  - XXDownload (from `../`)
+
+EXTERNAL SOURCES:
+  XXDownload:
+    :path: ../
+
+SPEC CHECKSUMS:
+  XXDownload: 94e0ef59b4c9d7b3b62462271a4b57a180cbcd15
+
+PODFILE CHECKSUM: b3b46585a644da61c9fcf3961f25947633597807
+
+COCOAPODS: 1.1.1

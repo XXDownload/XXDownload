@@ -1,0 +1,6 @@
+framework module XXDownload {
+  umbrella header "XXDownload-umbrella.h"
+
+  export *
+  module * { export * }
+}

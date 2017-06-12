@@ -1,0 +1,6 @@
+framework module Pods_XXDownload_Tests {
+  umbrella header "Pods-XXDownload_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
