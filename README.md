@@ -78,6 +78,7 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod "XXDownload"
+pod 'XXDownload',:git => 'https://github.com/XXDownload/XXDownload.git'
 ```
 ## Author
 
