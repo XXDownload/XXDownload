@@ -58,7 +58,7 @@ static XXDownloadManager *_instance = nil;
                                                  selector:@selector(terminte)
                                                      name:UIApplicationWillTerminateNotification
                                                    object:nil];
-        
+        self.taskNumber = 1;
         [self setUpDownloadTool];
     }
     return self;
@@ -75,7 +75,6 @@ static XXDownloadManager *_instance = nil;
 }
 - (void)setUpData {
 
-    self.taskNumber = 1;
     NSArray *array = [self.dbHelper getAllTasks];
     for (XXDownloadModel *model in array) {
         
