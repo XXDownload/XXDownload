@@ -66,7 +66,16 @@
     NSInteger type = [[dataDict valueForKey:@"type"] integerValue];
     
     XXDownloadTask *dTask = [XXDownloadTask taskWithId:taskId name:name type:type url:url size:0];
-    [[XXDownloadManager sharedManager] addTask:dTask];
+    
+    if (indexPath.row % 2== 0) {
+        
+        [[XXDownloadManager sharedManager] insertTask:dTask];
+        
+    } else {
+    
+        [[XXDownloadManager sharedManager] addTask:dTask];
+    }
+    
     XXDownloadController *downloadVC = [[XXDownloadController alloc] init];
     [self.navigationController pushViewController:downloadVC animated:YES];
     

@@ -59,7 +59,6 @@ NSString *const SSBackgroundIdentifier = @"SSBackgroundIdentifier";
 - (void)configureTask:(XXDownloadTask *)task {
     
     task.session = self.session;
-    task.downloadTask = nil;
 }
 #pragma mark - public
 /**
@@ -68,6 +67,7 @@ NSString *const SSBackgroundIdentifier = @"SSBackgroundIdentifier";
 - (void)startDownloadWithTask:(XXDownloadTask *)task {
 
     [self configureTask:task];
+    task.downloadTask = nil;
     if (task.rightPartData) {
         
         task.downloadTask = [self.session downloadTaskWithResumeData:task.rightPartData];
@@ -86,6 +86,7 @@ NSString *const SSBackgroundIdentifier = @"SSBackgroundIdentifier";
  */
 - (void)pauseDownloadWithTask:(XXDownloadTask *)task {
 
+    [self configureTask:task];
     [task.downloadTask cancelByProducingResumeData:^(NSData * _Nullable resumeData) {
         
         task.partData = resumeData;
@@ -100,6 +101,7 @@ NSString *const SSBackgroundIdentifier = @"SSBackgroundIdentifier";
  */
 - (void)deleteDownloadWithTask:(XXDownloadTask *)task {
 
+    [self configureTask:task];
     [task.downloadTask cancelByProducingResumeData:^(NSData * _Nullable resumeData) {
         
         

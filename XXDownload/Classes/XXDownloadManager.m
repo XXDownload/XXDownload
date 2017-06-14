@@ -131,9 +131,7 @@ static XXDownloadManager *_instance = nil;
         if (isForced) {
             
             XXDownloadTask *cancelTask = self.downloadingArray.firstObject;
-            [self pauseDownloadWithTask:cancelTask];
-            [self.downloadingArray removeObject:cancelTask];
-            
+            [self pauseDownloadWithTask:cancelTask beginNext:NO];
             //递归
             [self startDownloadWithTask:task isForced:isForced];
             //让刚才被暂停的任务进入等待队列的第一个
@@ -171,7 +169,7 @@ static XXDownloadManager *_instance = nil;
         startBlock();
     }
 }
-- (void)pauseDownloadWithTask:(XXDownloadTask *)task {
+- (void)pauseDownloadWithTask:(XXDownloadTask *)task beginNext:(BOOL)beginNext {
 
     [[XXDownloadTool sharedTool] pauseDownloadWithTask:task];
     [self.waitArray removeObject:task];
@@ -181,7 +179,10 @@ static XXDownloadManager *_instance = nil;
         
         [self.delegate downloadTask:task stateChanged:task.state];
     }
-    [self startNextTask];
+    if (beginNext) {
+        
+        [self startNextTask];
+    }
 }
 - (void)deleteTaskWithTask:(XXDownloadTask *)task {
 
@@ -287,7 +288,7 @@ static XXDownloadManager *_instance = nil;
         
         if (task.state == XXDownloadStateOnGoing || task.state == XXDownloadStateWaiting) {
             
-            [self pauseDownloadWithTask:task];
+            [self pauseDownloadWithTask:task beginNext:NO];
         }
     }
 }
@@ -382,7 +383,7 @@ static XXDownloadManager *_instance = nil;
 
     if (task.state == XXDownloadStateOnGoing || task.state == XXDownloadStateWaiting) {
         
-        [self pauseDownloadWithTask:task];
+        [self pauseDownloadWithTask:task beginNext:YES];
     }
 }
 /**
