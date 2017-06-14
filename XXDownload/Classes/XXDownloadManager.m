@@ -136,6 +136,8 @@ static XXDownloadManager *_instance = nil;
             
             //递归
             [self startDownloadWithTask:task isForced:isForced];
+            //让刚才被暂停的任务进入等待队列的第一个
+            [self startTask:cancelTask];
         }
     }
 }
@@ -301,6 +303,31 @@ static XXDownloadManager *_instance = nil;
             [self startTask:task];
         }
     }
+}
+/**
+ 插入一个任务 直接开始下载
+ 
+ @param task 下载任务
+ */
+- (void)insertTask:(XXDownloadTask *)task {
+
+    if (!task) {
+        
+        return;
+    }
+    //判断下载任务是否在数据库的下载任务列表中
+    NSString  *taskId = task.model.taskId;
+    XXDownloadTask *temp = [self downloadTaskWithId:taskId];
+    if (temp) {
+        
+        return;
+    }
+    task.state = XXDownloadStateWaiting;
+    [self configureTask:task];
+    [self.downloadArray addObject:task];
+    [self.waitArray addObject:task];
+    [self.dbHelper insertTasks:@[task.model]];
+    [self startDownloadWithTask:task isForced:YES];
 }
 /**
  添加一个下载任务

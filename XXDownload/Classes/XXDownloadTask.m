@@ -129,7 +129,6 @@
     
     self.speed = fabs((self.courrentBytes - self.lastBytes) / 1024.0f);
     self.lastBytes = self.courrentBytes;
-    NSLog(@"定时器事件");
 }
 #pragma mark - private
 #pragma mark - delegate

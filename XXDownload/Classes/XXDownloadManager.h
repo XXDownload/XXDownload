@@ -65,6 +65,13 @@
  全部任务开始
  */
 - (void)startAllTask;
+
+/**
+ 插入一个任务 直接开始下载 如果有正在下载的则让正在下载的暂停
+
+ @param task 下载任务
+ */
+- (void)insertTask:(XXDownloadTask *)task;
 /**
  添加一个下载任务
 
