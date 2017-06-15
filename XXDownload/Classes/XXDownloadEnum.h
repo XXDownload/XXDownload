@@ -8,15 +8,15 @@
 typedef enum : NSUInteger {
     
     /** 等待状态*/
-    XXDownloadStateWaiting = 1,
+    XXDownloadStateWaiting = 10,
     /** 正在下载状态*/
-    XXDownloadStateOnGoing = 2,
+    XXDownloadStateOnGoing = 11,
     /** 暂停状态*/
-    XXDownloadStatePaused = 3,
+    XXDownloadStatePaused = 12,
     /** 下载错误状态*/
-    XXDownloadStateError = 4,
+    XXDownloadStateError = 13,
     /** 完成状态*/
-    XXDownloadStateFinished = 5,
+    XXDownloadStateFinished = 14,
 } XXDownloadState;
 
 typedef enum : NSUInteger {
