@@ -164,7 +164,7 @@ NSString *const SSBackgroundIdentifier = @"SSBackgroundIdentifier";
     }
     dispatch_async(dispatch_get_main_queue(), ^{
         
-        if ([self.delegate respondsToSelector:@selector(downloadTask:stateChanged:)]) {
+        if (self.delegate && [self.delegate respondsToSelector:@selector(downloadTask:stateChanged:)]) {
             
             [self.delegate downloadTask:dTask stateChanged:dTask.state];
         }
@@ -216,7 +216,7 @@ totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite {
     
     dispatch_async(dispatch_get_main_queue(), ^{
         
-        if ([self.delegate respondsToSelector:@selector(downloadTask:downloadSize:totalSize:progress:speed:)]) {
+        if (self.delegate && [self.delegate respondsToSelector:@selector(downloadTask:downloadSize:totalSize:progress:speed:)]) {
             
             [self.delegate downloadTask:dTask downloadSize:dTask.downloadSize totalSize:dTask.totalSize progress:dTask.progress speed:dTask.speed];
         }

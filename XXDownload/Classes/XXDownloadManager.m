@@ -147,12 +147,12 @@ static XXDownloadManager *_instance = nil;
         [[XXDownloadTool sharedTool] startDownloadWithTask:task];
         task.state = XXDownloadStateWaiting;
         [self.waitArray removeObject:task];
-        if ([self.delegate respondsToSelector:@selector(downloadTask:stateChanged:)]) {
+        if (self.delegate && [self.delegate respondsToSelector:@selector(downloadTask:stateChanged:)]) {
             
             [self.delegate downloadTask:task stateChanged:task.state];
         }
     };
-    if ([self.taskSetUpdelegate respondsToSelector:@selector(downloadTaskWillStart:setUpFinish:failBlock:)]) {
+    if (self.taskSetUpdelegate && [self.taskSetUpdelegate respondsToSelector:@selector(downloadTaskWillStart:setUpFinish:failBlock:)]) {
         
         [self.taskSetUpdelegate downloadTaskWillStart:task setUpFinish:^{
            
@@ -175,7 +175,7 @@ static XXDownloadManager *_instance = nil;
     [self.waitArray removeObject:task];
     [self.downloadingArray removeObject:task];
     task.state = XXDownloadStatePaused;
-    if ([self.delegate respondsToSelector:@selector(downloadTask:stateChanged:)]) {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(downloadTask:stateChanged:)]) {
         
         [self.delegate downloadTask:task stateChanged:task.state];
     }
@@ -204,7 +204,7 @@ static XXDownloadManager *_instance = nil;
 }
 - (void)configureTask:(XXDownloadTask *)task {
     
-    if ([self.delegate respondsToSelector:@selector(cacheDirectoryWithdownloadTask:)]) {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(cacheDirectoryWithdownloadTask:)]) {
         
         task.cacheDir = [self.delegate cacheDirectoryWithdownloadTask:task];
         
@@ -212,7 +212,7 @@ static XXDownloadManager *_instance = nil;
     
         task.cacheDir = self.downloadPath.cacheDir;
     }
-    if ([self.delegate respondsToSelector:@selector(downloadDirectoryWithdownloadTask:)]) {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(downloadDirectoryWithdownloadTask:)]) {
         
         task.downloadDir = [self.delegate downloadDirectoryWithdownloadTask:task];
         
@@ -238,14 +238,14 @@ static XXDownloadManager *_instance = nil;
         [self saveDownloading];
 
     }
-    if ([self.delegate respondsToSelector:@selector(downloadTask:stateChanged:)]) {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(downloadTask:stateChanged:)]) {
         
         [self.delegate downloadTask:task stateChanged:state];
     }
 }
 - (void)downloadTask:(XXDownloadTask *)task downloadSize:(CGFloat)dSize totalSize:(CGFloat)tSize progress:(CGFloat)progress speed:(CGFloat)speed {
 
-    if ([self.delegate respondsToSelector:@selector(downloadTask:downloadSize:totalSize:progress:speed:)]) {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(downloadTask:downloadSize:totalSize:progress:speed:)]) {
         
         [self.delegate downloadTask:task downloadSize:dSize totalSize:tSize progress:progress speed:speed];
     }
@@ -368,7 +368,7 @@ static XXDownloadManager *_instance = nil;
     }
     task.state = XXDownloadStateWaiting;
     [self.waitArray insertObject:task atIndex:0];
-    if ([self.delegate respondsToSelector:@selector(downloadTask:stateChanged:)]) {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(downloadTask:stateChanged:)]) {
         
         [self.delegate downloadTask:task stateChanged:task.state];
     }
