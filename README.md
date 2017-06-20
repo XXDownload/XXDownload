@@ -23,18 +23,18 @@ iOS8.0
 
 ```
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    /*
-    Here the dbHelper can implement by yourself,it must conformsToProtocol XXDownloadDBDelegate
-    */
-   [XXDownloadManager sharedManager].dbHelper = [[XXDownloadDBHelper alloc] init];
-   
-   return YES;
+// Override point for customization after application launch.
+/*
+Here the dbHelper can implement by yourself,it must conformsToProtocol XXDownloadDBDelegate
+*/
+[XXDownloadManager sharedManager].dbHelper = [[XXDownloadDBHelper alloc] init];
+
+return YES;
 }
 
 - (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)())completionHandler {
-    
-    [[XXDownloadManager sharedManager] addFinishBlock:completionHandler identifier:identifier];
+
+[[XXDownloadManager sharedManager] addFinishBlock:completionHandler identifier:identifier];
 }
 
 ```
@@ -44,9 +44,9 @@ iOS8.0
 a.add Task
 
 ```
- XXDownloadTask *dTask = [XXDownloadTask taskWithId:taskId name:name type:type url:url size:0];
- 
- [[XXDownloadManager sharedManager] addTask:dTask];
+XXDownloadTask *dTask = [XXDownloadTask taskWithId:taskId name:name type:type url:url size:0];
+
+[[XXDownloadManager sharedManager] addTask:dTask];
 ```
 b.start Task
 
@@ -63,13 +63,16 @@ d.delete Task
 ```
 [[XXDownloadManager sharedManager] deleteTask:model];
 ```
-## Detail USEAGE
-[http://www.jianshu.com/p/e566bc3ac365](http://www.jianshu.com/p/e566bc3ac365)
+
 4.CallBack
 
 Object that conforms XXDownloadTaskDelegate can show the downloading task`s progress and the downloading state.
 
 Object that conforms XXDownloadTaskSetUpDelegate can configure the task before the task beginning.
+
+## Detail USEAGE
+
+[http://www.jianshu.com/p/e566bc3ac365](http://www.jianshu.com/p/e566bc3ac365)
 
 
 ## Installation
@@ -78,7 +81,6 @@ XXDownload is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "XXDownload"
 pod 'XXDownload',:git => 'https://github.com/XXDownload/XXDownload.git'
 ```
 ## Author
