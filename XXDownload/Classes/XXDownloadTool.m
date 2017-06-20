@@ -7,11 +7,6 @@
 //
 #import "XXDownloadTool.h"
 
-/**
- *  后台配置对象标识符
- */
-NSString *const SSBackgroundIdentifier = @"SSBackgroundIdentifier";
-
 
 @interface XXDownloadTool ()<NSURLSessionDelegate,NSURLSessionDownloadDelegate>
 
@@ -237,7 +232,8 @@ expectedTotalBytes:(int64_t)expectedTotalBytes {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         
-        NSURLSessionConfiguration *configure = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:SSBackgroundIdentifier];
+        NSString *bundeId = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleIdentifier"];
+        NSURLSessionConfiguration *configure = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:bundeId];
         
         session = [NSURLSession sessionWithConfiguration:configure
                                                 delegate:self

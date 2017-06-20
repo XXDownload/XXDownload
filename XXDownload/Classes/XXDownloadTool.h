@@ -10,11 +10,6 @@
 #import "XXDownloadTask.h"
 #import "XXDownloadTaskDelegate.h"
 
-/**
- *后台配置对象标识符
- */
-extern NSString *const SSBackgroundIdentifier;
-
 
 @interface XXDownloadTool: NSObject
 
