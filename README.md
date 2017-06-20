@@ -63,7 +63,8 @@ d.delete Task
 ```
 [[XXDownloadManager sharedManager] deleteTask:model];
 ```
-
+## Detail USEAGE
+[http://www.jianshu.com/p/e566bc3ac365](http://www.jianshu.com/p/e566bc3ac365)
 4.CallBack
 
 Object that conforms XXDownloadTaskDelegate can show the downloading task`s progress and the downloading state.
