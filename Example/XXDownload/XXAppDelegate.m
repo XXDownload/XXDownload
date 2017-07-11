@@ -10,6 +10,7 @@
 #import "XXDownload.h"
 #import "XXViewController.h"
 #import "XXDownloadDBHelper.h"
+#import "XXSetUpTool.h"
 
 @implementation XXAppDelegate
 
@@ -22,6 +23,7 @@
     //设置应用程序的图标右上角的数字
     application.applicationIconBadgeNumber = 0;
     [XXDownloadManager sharedManager].dbHelper = [[XXDownloadDBHelper alloc] init];
+    [XXDownloadManager sharedManager].taskSetUpdelegate = [XXSetUpTool sharedInstance];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];

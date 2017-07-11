@@ -7,6 +7,12 @@
   "type":1
   },
   {
+  "id":"101",
+  "name":"XCode9",
+  "url":"http://adcdownload.apple.com/Developer_Tools/Xcode_9_beta_2/Xcode_9_beta_2.xip",
+  "type":1
+  },
+  {
   "id":"102",
   "name":"XCode7.1",
   "url":"http://dl1sw.baidu.com/client/20150922/Xcode_7.1_beta.dmg",

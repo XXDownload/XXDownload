@@ -160,8 +160,7 @@ static XXDownloadManager *_instance = nil;
             
         } failBlock:^{
             
-            task.state = XXDownloadStateError;
-            [self downloadTask:task stateChanged:XXDownloadStateError];
+            
         }];
 
     } else {

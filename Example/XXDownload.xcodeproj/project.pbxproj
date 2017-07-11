@@ -12,6 +12,7 @@
 		5722A2CD1EEEA4B900F93E00 /* videoList.json in Resources */ = {isa = PBXBuildFile; fileRef = 5722A2CC1EEEA4B900F93E00 /* videoList.json */; };
 		5722A2D21EEEA6D800F93E00 /* XXDataBaseTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5722A2CF1EEEA6D800F93E00 /* XXDataBaseTool.m */; };
 		5722A2D31EEEA6D800F93E00 /* XXDownloadDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5722A2D11EEEA6D800F93E00 /* XXDownloadDBHelper.m */; };
+		57C0B64A1F1480F60089D7FA /* XXSetUpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C0B6491F1480F60089D7FA /* XXSetUpTool.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -52,6 +53,8 @@
 		5722A2CF1EEEA6D800F93E00 /* XXDataBaseTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXDataBaseTool.m; sourceTree = "<group>"; };
 		5722A2D01EEEA6D800F93E00 /* XXDownloadDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXDownloadDBHelper.h; sourceTree = "<group>"; };
 		5722A2D11EEEA6D800F93E00 /* XXDownloadDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXDownloadDBHelper.m; sourceTree = "<group>"; };
+		57C0B6481F1480F60089D7FA /* XXSetUpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXSetUpTool.h; sourceTree = "<group>"; };
+		57C0B6491F1480F60089D7FA /* XXSetUpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXSetUpTool.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* XXDownload_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXDownload_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -160,6 +163,8 @@
 				5722A2CF1EEEA6D800F93E00 /* XXDataBaseTool.m */,
 				5722A2D01EEEA6D800F93E00 /* XXDownloadDBHelper.h */,
 				5722A2D11EEEA6D800F93E00 /* XXDownloadDBHelper.m */,
+				57C0B6481F1480F60089D7FA /* XXSetUpTool.h */,
+				57C0B6491F1480F60089D7FA /* XXSetUpTool.m */,
 				6003F59C195388D20070C39A /* XXAppDelegate.h */,
 				6003F59D195388D20070C39A /* XXAppDelegate.m */,
 				6003F5A5195388D20070C39A /* XXViewController.h */,
@@ -424,6 +429,7 @@
 				6003F5A7195388D20070C39A /* XXViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				5722A2CB1EEEA2EE00F93E00 /* XXDownloadController.m in Sources */,
+				57C0B64A1F1480F60089D7FA /* XXSetUpTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
