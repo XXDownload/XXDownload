@@ -6,8 +6,9 @@
 //
 //
 
-#ifndef Header_h
-#define Header_h
+#ifndef _XXDownload_
+#define _XXDownload_
+
 
 #import "NSData+NSURLSessionResumeData.h"
 #import "XXDownloadDBDelegate.h"
