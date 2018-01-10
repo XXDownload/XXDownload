@@ -71,7 +71,7 @@
 /**
  创建一个下载任务
  */
-+ (XXDownloadTask *)taskWithId:(NSString *)taskId name:(NSString *)taskName type:(XXDownloadType)taskType url:(NSString *)taskUrl size:(int64_t)taskSize;
++ (XXDownloadTask *)taskWithId:(NSString *)taskId name:(NSString *)taskName type:(XXDownloadType)taskType url:(NSString *)taskUrl desc:(NSString *)desc;
 
 /**
  删除任务的文件

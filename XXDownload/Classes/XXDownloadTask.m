@@ -36,22 +36,26 @@
     NSLog(@"%s",__func__);
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
-+ (XXDownloadTask *)taskWithId:(NSString *)taskId name:(NSString *)taskName type:(XXDownloadType)taskType url:(NSString *)taskUrl size:(int64_t)taskSize {
-
-     XXDownloadModel *model = [[XXDownloadModel alloc] init];
-     
-     XXDownloadTask *dTask = [[XXDownloadTask alloc] init];
-     
-     model.taskId = taskId;
-     model.taskName = taskName;
-     model.taskState = XXDownloadStateWaiting;
-     model.taskType = taskType;
-     model.taskUrl = taskUrl;
-     model.taskSize = taskSize;
+/**
+ 创建一个下载任务
+ */
++ (XXDownloadTask *)taskWithId:(NSString *)taskId name:(NSString *)taskName type:(XXDownloadType)taskType url:(NSString *)taskUrl desc:(NSString *)desc {
     
-     dTask.model = model;
+    XXDownloadModel *model = [[XXDownloadModel alloc] init];
+    
+    XXDownloadTask *dTask = [[XXDownloadTask alloc] init];
+    
+    model.taskId = taskId;
+    model.taskName = taskName;
+    model.taskState = XXDownloadStateWaiting;
+    model.taskType = taskType;
+    model.taskUrl = taskUrl;
+    model.desc = desc;
+    
+    dTask.model = model;
     
     return dTask;
+    
 }
 #pragma mark - public
 
