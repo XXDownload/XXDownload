@@ -65,7 +65,7 @@
     NSString *url = [dataDict valueForKey:@"url"];
     NSInteger type = [[dataDict valueForKey:@"type"] integerValue];
     
-    XXDownloadTask *dTask = [XXDownloadTask taskWithId:taskId name:name type:type url:url size:0];
+    XXDownloadTask *dTask = [XXDownloadTask taskWithId:taskId name:name type:type url:url desc:@""];
     
     if (indexPath.row % 2== 0) {
         

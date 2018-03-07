@@ -18,7 +18,10 @@
 #pragma mark - life cycle
 - (void)dealloc {
     
+#ifdef DEBUG
     NSLog(@"%s",__func__);
+#endif
+
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 - (NSTimeInterval)createTime {

@@ -63,10 +63,7 @@
  当前下载的字节数 用于计算下载速度
  */
 @property (assign,nonatomic)int64_t courrentBytes;
-/**
- 暂停或者下载出错产生的数据   用于断点续传
- */
-@property (strong,nonatomic) NSData *partData;
+
 
 /**
  创建一个下载任务
@@ -77,12 +74,10 @@
  删除任务的文件
  */
 - (void)deleteTaskFile;
-/**
- 返回纠正过后的数据
-
- @return 下载失败时的数据
- */
-- (NSData *)rightPartData;
+///设置下载暂停的数据
+- (void)setUpPartData:(NSData *)partData;
+///获取原来的下载暂停数据
+- (NSData *)originPartData;
 /**
  激活定时器计算下载速度
  */

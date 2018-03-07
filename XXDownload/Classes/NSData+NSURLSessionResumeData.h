@@ -14,6 +14,5 @@
 
  @return resumeData
  */
-- (NSData *)getRightResumeData;
-
+- (NSData *)rightResumeDataWithUrlString:(NSString *)urlString;
 @end

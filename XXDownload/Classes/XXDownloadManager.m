@@ -142,7 +142,7 @@ static XXDownloadManager *_instance = nil;
 
 - (void)startDownloadWithTask:(XXDownloadTask *)task {
 
-    void (^startBlock)() = ^() {
+    void (^startBlock)(void) = ^() {
     
         [[XXDownloadTool sharedTool] startDownloadWithTask:task];
         task.state = XXDownloadStateWaiting;
@@ -273,7 +273,7 @@ static XXDownloadManager *_instance = nil;
 /**
  设置appDelegate里面的block
  */
-- (void)addFinishBlock:(void(^)())finishBlock identifier:(NSString *)identifier {
+- (void)addFinishBlock:(void(^)(void))finishBlock identifier:(NSString *)identifier {
 
     [XXDownloadTool sharedTool].appdelegateFinishBlock = finishBlock;
 }

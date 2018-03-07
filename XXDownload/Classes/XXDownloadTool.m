@@ -6,6 +6,7 @@
 //  Copyright © 2017年 wanxue. All rights reserved.
 //
 #import "XXDownloadTool.h"
+#import "NSData+NSURLSessionResumeData.h"
 
 
 @interface XXDownloadTool ()<NSURLSessionDelegate,NSURLSessionDownloadDelegate>
@@ -31,7 +32,10 @@
 #pragma mark - life cycle
 - (void)dealloc {
     
+#ifdef DEBUG
+    
     NSLog(@"%s",__func__);
+#endif
 }
 /**
  下载单例工具
@@ -63,9 +67,11 @@
 
     [self configureTask:task];
     task.downloadTask = nil;
-    if (task.rightPartData) {
+    NSData *partData = [task originPartData];
+    if (partData) {
         
-        task.downloadTask = [self.session downloadTaskWithResumeData:task.rightPartData];
+        NSData *rightData = [partData rightResumeDataWithUrlString:task.model.taskUrl];
+        task.downloadTask = [self.session downloadTaskWithResumeData:rightData];
         [task.downloadTask resume];
         
     } else {
@@ -84,7 +90,7 @@
     [self configureTask:task];
     [task.downloadTask cancelByProducingResumeData:^(NSData * _Nullable resumeData) {
         
-        task.partData = resumeData;
+        [task setUpPartData:resumeData];
     }];
     [self.downloadingDict removeObjectForKey:@(task.downloadTask.taskIdentifier)];
     //摧毁定时器
@@ -132,13 +138,21 @@
     
     if (error) {
         
+#ifdef DEBUG
+        
         NSLog(@"下载失败了，快快检查：%@",error);
+#endif
         if (dTask.state != XXDownloadStatePaused) {
             //真的下载失败了
             if ([error.userInfo objectForKey:NSURLSessionDownloadTaskResumeData]) {
                 
-                dTask.partData = [error.userInfo objectForKey:NSURLSessionDownloadTaskResumeData];
-                dTask.downloadTask = [self.session downloadTaskWithResumeData:[dTask rightPartData]];
+                NSData *resumeData = [error.userInfo objectForKey:NSURLSessionDownloadTaskResumeData];
+                if (resumeData) {
+                    
+                    [dTask setUpPartData:resumeData];
+                }
+                NSData *rightData = [resumeData rightResumeDataWithUrlString:dTask.model.taskUrl];
+                dTask.downloadTask = [self.session downloadTaskWithResumeData:rightData];
                 [dTask.downloadTask resume];
                 
             } else {
@@ -178,6 +192,9 @@ didFinishDownloadingToURL:(NSURL *)location {
     NSURL *toUrl = [NSURL fileURLWithPath:dTask.savePath];
     NSError *error = nil;
     [fileManager moveItemAtURL:location toURL:toUrl error:&error];
+    
+#ifdef DEBUG
+    
     if (error) {
         
         NSLog(@"移动失败，请检查 %@",error);
@@ -186,6 +203,8 @@ didFinishDownloadingToURL:(NSURL *)location {
         
         NSLog(@"下载文件移动成功");
     }
+#endif
+    
 }
 - (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask
       didWriteData:(int64_t)bytesWritten
@@ -221,7 +240,10 @@ totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite {
  didResumeAtOffset:(int64_t)fileOffset
 expectedTotalBytes:(int64_t)expectedTotalBytes {
 
+#ifdef DEBUG
     NSLog(@"文件偏移位置%.2f\n还有多少文件下载:%.2f",fileOffset / 1024.0 / 1024.0,expectedTotalBytes / 1024.0 / 1024.0);
+#endif
+    
 }
 #pragma mark - event response
 

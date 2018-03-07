@@ -27,7 +27,7 @@
 /**
  保存appDelegate
  */
-@property (copy,nonatomic) void(^appdelegateFinishBlock)();
+@property (copy,nonatomic) void(^appdelegateFinishBlock)(void);
 
 /**
  开始下载任务

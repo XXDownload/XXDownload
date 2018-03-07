@@ -6,8 +6,6 @@
 //  Copyright © 2017年 wanxue. All rights reserved.
 //
 #import "XXDownloadTask.h"
-#import "NSData+NSURLSessionResumeData.h"
-
 
 @interface XXDownloadTask ()
 
@@ -24,6 +22,10 @@
  定时器用于计算下载速度
  */
 @property (strong,nonatomic)NSTimer *timer;
+/**
+ 暂停或者下载出错产生的数据   用于断点续传
+ */
+@property (strong,nonatomic) NSData *partData;
 
 @end
 
@@ -33,7 +35,11 @@
 #pragma mark - life cycle
 - (void)dealloc {
     
+#ifdef DEBUG
+    
     NSLog(@"%s",__func__);
+#endif
+    
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 /**
@@ -70,6 +76,7 @@
     if ([fileManager fileExistsAtPath:self.savePath]) {
         
         BOOL flag = [fileManager removeItemAtPath:self.savePath error:&error];
+#ifdef DEBUG
         if (flag) {
             
             NSLog(@"删除成功 %s",__func__);
@@ -78,10 +85,12 @@
             
             NSLog(@"删除失败,%@ %s",error,__func__);
         }
+#endif
     }
     if ([fileManager fileExistsAtPath:self.cachePath]) {
         
         BOOL flag2 = [fileManager removeItemAtPath:self.cachePath error:&error];
+#ifdef DEBUG
         if (flag2) {
             
             NSLog(@"删除成功 %s",__func__);
@@ -90,19 +99,8 @@
             
             NSLog(@"删除失败,%@ %s",error,__func__);
         }
+#endif
     }
-}
-/**
- 返回纠正过后的数据
- 
- @return 下载失败时的数据
- */
-- (NSData *)rightPartData {
-
-    NSData *partData = self.partData ? self.partData : [[NSData alloc] initWithContentsOfFile:self.cachePath];
-    NSData *rightData = [partData getRightResumeData];
-    
-    return rightData;
 }
 /**
  激活定时器计算下载速度
@@ -128,6 +126,33 @@
         self.timer = nil;
     });
 }
+///设置下载暂停的数据
+- (void)setUpPartData:(NSData *)partData {
+    
+    if (partData) {
+        
+        self.partData = partData;
+        BOOL flag = [partData writeToFile:self.cachePath atomically:YES];
+        if (flag) {
+#ifdef DEBUG
+            NSLog(@"写入成功");
+#endif
+        } else {
+            
+#ifdef DEBUG
+            NSLog(@"写入失败");
+#endif
+        }
+    }
+}
+///获取原来的下载暂停数据
+- (NSData *)originPartData {
+    
+    NSData *partData = self.partData ? self.partData : [[NSData alloc] initWithContentsOfFile:self.cachePath];
+    self.partData = partData;
+    return partData;
+}
+
 #pragma mark - event response
 - (void)timerAction {
     
@@ -167,22 +192,7 @@
     _state = state;
     self.model.taskState = _state;
 }
-- (void)setPartData:(NSData *)partData {
 
-    _partData = partData;
-    if (_partData) {
-        
-        BOOL flag = [_partData writeToFile:self.cachePath atomically:YES];
-        if (flag) {
-            
-            NSLog(@"写入成功");
-            
-        } else {
-            
-            NSLog(@"写入失败");
-        }
-    }
-}
 - (NSString *)cachePath {
 
     if (!_cachePath) {

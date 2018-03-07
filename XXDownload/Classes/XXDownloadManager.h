@@ -55,7 +55,7 @@
 /**
  设置appDelegate里面的block
  */
-- (void)addFinishBlock:(void(^)())finishBlock identifier:(NSString *)identifier;
+- (void)addFinishBlock:(void(^)(void))finishBlock identifier:(NSString *)identifier;
 
 /**
  全部暂停
