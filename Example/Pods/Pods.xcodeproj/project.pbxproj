@@ -7,46 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08F18F38BECA9AAAAD490FF524D76E8B /* XXDownloadPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 62585B63EC2DF3D5099E86C42F07F294 /* XXDownloadPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02DE5232A935A1A5F0D1115A2FE86BC2 /* XXDownloadPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 3722C160F253C70B405E3EA6DF2EE426 /* XXDownloadPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		102B4F37FAE46609AE64B7C66E8D0F7C /* XXDownloadTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EC8D72BBE05C2484707116C35787326 /* XXDownloadTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11CA0447A5A3B256F14B1BEE765E8AE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		14FC51217384BB24AEBBE8785334ED2F /* XXDownloadTaskDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 53A63244143F22744E15EFC33010B59D /* XXDownloadTaskDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22554065FA07F1BFE5308A685394CB12 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 351F8E59854BCD39585AB8A055AC2F52 /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BE763C5FB3DD5A9C274594E4F612327 /* XXDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BDC5BE831DA6E1116D633E72B4D188 /* XXDownloadManager.m */; };
+		2C92BC50D7F8C15F0FC181BC6B934E3D /* XXDownload-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 609CF41F6B56EAFD80A38E186C84AF28 /* XXDownload-dummy.m */; };
+		2E4D84EFCA3472BC0A56E1626854837C /* XXDownloadPath.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA4FC850E144D46AEC4F8718BE1DFF8 /* XXDownloadPath.m */; };
 		37F097E2269EF1BD238AD7449D796445 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = ED48C0E1AA39302CCDD55032B7544B36 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		3A6E8BCD10490BF59D0A5AC9B80E557B /* Pods-XXDownload_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C94C8E5247E1D0D2476F7F7009E3D6 /* Pods-XXDownload_Tests-dummy.m */; };
+		3CB5CD2341365CAD9266B626CFB086C4 /* XXDownloadManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BD8CEB2222289B0CCF3CD675345BEAA /* XXDownloadManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E43906B70EB01C06F3AE17008B853B9 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F546D17BEE96A3AC80F5733BACB23C /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40A7A67F8AFEE845A4760161B59E1B5A /* Pods-XXDownload_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF81B6FF84AB964C39E45CAD879534C3 /* Pods-XXDownload_Example-dummy.m */; };
-		7024B2E444B4E8D9224B0B4F522C69CA /* XXDownload-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81309FDE618ADAF6ED7BD9A878BBE5B7 /* XXDownload-dummy.m */; };
-		7136FFABE71C615F39248C11ED883253 /* XXDownload-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0D01C04A22DB77154D919DF6B5EB2C1 /* XXDownload-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		529A37DFC226A0B6D27554802D0BA215 /* XXDownloadModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E378804BF559F9EEAB2F0EA0AD4EC7A /* XXDownloadModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52A05F4164A98A8A4503545D6AF58FC8 /* XXDownloadTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E8EB69F2DEF623E9DB37AAEF433E6C /* XXDownloadTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6969CDBCB0152E5662BA523109731E0E /* XXDownloadTaskSetUpDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 756129A41B772E71AC607E869FBA4149 /* XXDownloadTaskSetUpDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CF90E3E7B97A954621E9E0077EBD8E5 /* XXDownload.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DAF6881CBC8F512290F95EEAFF433EC /* XXDownload.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72563ADE99DC9E753B27D48B16AA3654 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		76AD07796C1867429124355B1C8DAF76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		7A573E06A44D061E5D67C2E53B8B9994 /* XXDownloadManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C42DABA58E9C80CD844C8ECD46DB593F /* XXDownloadManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D968B526B5918973E01BF0B670331D2 /* XXDownloadModel.h in Headers */ = {isa = PBXBuildFile; fileRef = EFABCE9CB7F4CE8BC9EA5F81BF780E6D /* XXDownloadModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		815468DBC32DC792076F566EDF122571 /* XXDownloadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6878B7382124FC12F5115ADA9E68B3ED /* XXDownloadModel.m */; };
-		868B11FD0DECC3DC9E065438C39CCA3B /* NSData+NSURLSessionResumeData.h in Headers */ = {isa = PBXBuildFile; fileRef = E9719AD706BEC0E429C19431BADFD5E1 /* NSData+NSURLSessionResumeData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87ECA447DB887426665260651B7F147E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF62A1F971FFFC84C36F474CF296297 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		8D97F6C29585938EBC9013781BBE81E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		90395B21513D67F3734D744E3A10019F /* XXDownloadTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 692ADEEB99666597F61303E1F1483FB4 /* XXDownloadTool.m */; };
 		96E70B43FC04BC99AED1BBD4FB1D7581 /* FMDB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 774678108D22A09213789D973E2051AC /* FMDB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		97AAD37D0F8DD2D2702781336C13D026 /* XXDownloadTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 48026AC537E5640B79786F9452F502CF /* XXDownloadTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9B8D84996694C541CD3434386E0A081A /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 01C9B19641620A44266703CB7F104828 /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C11A290C9C5866A185A54F1EC04E2BB /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B97A597AFE8B5A90EDFF8560393C46B /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		A1B5D80A8998311B8C9043E6942925E6 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E784FE473275B6CE21E9FC8AE454E /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A1CBAFFC0C962714C956B935D9A57CFB /* XXDownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 144428C1AC498F2EC26036F504D9BF63 /* XXDownloadTask.m */; };
 		A548833BE5FAD40830428F36E77D0F52 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C4BBD76359D36C69E5804A290D1C5ED2 /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ABEBF68E4A2791C3E8E1EED1E2094748 /* XXDownload.h in Headers */ = {isa = PBXBuildFile; fileRef = 165134110744678EFE52B74F0A642D28 /* XXDownload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B02FC6A57F2A7ECC552DA9E77845BF25 /* XXDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCA720FDE7FC9FC02D34AF39CE36B72 /* XXDownloadManager.m */; };
 		B0E6CE6D8C1FD780ECA4D2AFE70D7ABF /* Pods-XXDownload_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AE2B19856CFA9B5F420D146950FB2FE /* Pods-XXDownload_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3B11583669E4C168883D7D88BF45648 /* Pods-XXDownload_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5BF3ABBEAD194FAFA80D41CCD0A8E1C /* Pods-XXDownload_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5E68AA24A94BF7FDC5CFEBF1E110634 /* XXDownloadEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = F952689D630C9B1F7B34E32C22F3801D /* XXDownloadEnum.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B7788CF625AF6362F3EF9DA2D22F2ED2 /* XXDownloadTool.h in Headers */ = {isa = PBXBuildFile; fileRef = AA871CE0DC2454CB6F20BA3B9394581B /* XXDownloadTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3B848403123CC2A02015855F09C54D7 /* XXDownloadEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FE1D7ECDC30029FF356A44DEB90DF8D /* XXDownloadEnum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCF09758118286EB1E5883F3A8C6A9B1 /* XXDownloadTool.m in Sources */ = {isa = PBXBuildFile; fileRef = BE10375A309715880157569286577B39 /* XXDownloadTool.m */; };
 		C605A44DF96E7FCACF7D6E37B62F795D /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D2F8382360C935E0097F1CB2E26820 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		CC1D9C631844BBEC8E19CA7A19F09FB8 /* XXDownloadDBDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A3E06061376DE0DC10FACF572ECCEE8 /* XXDownloadDBDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CCB74062CE0F4B8E5B7483599BC398DA /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 73E08DD3F409CC910BDF9AAC0E1BEB35 /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D5991941DC41DDDDDACAE0B5D47A4639 /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5085BA3C5279C337F6D921E5CAFB1FC /* FMDB-dummy.m */; };
-		D7EE4C81614C7156ADB12C99F02CEAE0 /* NSData+NSURLSessionResumeData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A88E20F7E095CE04AA4BEAF8D0B6E9C /* NSData+NSURLSessionResumeData.m */; };
-		DB2F944402904E93AF2B5F2F97FD8A1A /* XXDownloadTaskSetUpDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8693141C4F8EE5AD4DBB3EE1DB49CB1F /* XXDownloadTaskSetUpDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E2E712A05B743BDE0445B5E6CA77DDDD /* XXDownloadPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 5996ACE99B29EF92981936A6F85D69D8 /* XXDownloadPath.m */; };
+		DE6A27D4119A2C82311D79A5965EF621 /* XXDownloadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6556428F50D7FF60093D379F47FEB0CB /* XXDownloadModel.m */; };
+		EB635D38F2238599164F667B3562251A /* XXDownloadDBDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 242F200276007EDBAB561114E2D8E9EB /* XXDownloadDBDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EED430B0EDEAC5AAEC69EE5DDF2C655E /* XXDownload-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD2AB9BF8F595860F5EAE7F751AA740E /* XXDownload-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F11FAB91014130EE233A3429439D38D7 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CFEEF64A76609C0E88017B38B7E12DA /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7BFB87B6DD2845C51C0778BCA5599D2 /* XXDownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2F076C79D7334CDFDF23810E4725F7 /* XXDownloadTask.m */; };
-		F95D858A5E9BE37C92C8F5409F356449 /* XXDownloadTaskDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 889BC34C5F7EE5882F1A3E8F31C62060 /* XXDownloadTaskDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,66 +69,64 @@
 		03352479FF84A1028FF655CDCFD43BB6 /* XXDownload.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XXDownload.framework; path = XXDownload.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		059499420E802CEA277510815FFA62E9 /* Pods-XXDownload_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XXDownload_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		09C34DA2D58E5AC237F2C63DAE7FD578 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		165134110744678EFE52B74F0A642D28 /* XXDownload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXDownload.h; path = XXDownload/Classes/XXDownload.h; sourceTree = "<group>"; };
-		1A3E06061376DE0DC10FACF572ECCEE8 /* XXDownloadDBDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXDownloadDBDelegate.h; path = XXDownload/Classes/XXDownloadDBDelegate.h; sourceTree = "<group>"; };
+		144428C1AC498F2EC26036F504D9BF63 /* XXDownloadTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XXDownloadTask.m; path = XXDownload/Classes/XXDownloadTask.m; sourceTree = "<group>"; };
 		1AE2B19856CFA9B5F420D146950FB2FE /* Pods-XXDownload_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XXDownload_Example-umbrella.h"; sourceTree = "<group>"; };
-		1D2F076C79D7334CDFDF23810E4725F7 /* XXDownloadTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XXDownloadTask.m; path = XXDownload/Classes/XXDownloadTask.m; sourceTree = "<group>"; };
 		1F3E784FE473275B6CE21E9FC8AE454E /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
-		21EA066299EF3A77D09A62D9A0CF4AE7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2A6468342D48E29E2BCFC10C8D2F656C /* XXDownload.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XXDownload.xcconfig; sourceTree = "<group>"; };
+		21129F835D4BFA404ABAD4B73F173589 /* XXDownload-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XXDownload-prefix.pch"; sourceTree = "<group>"; };
+		242F200276007EDBAB561114E2D8E9EB /* XXDownloadDBDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXDownloadDBDelegate.h; path = XXDownload/Classes/XXDownloadDBDelegate.h; sourceTree = "<group>"; };
+		248445A584684010B5A2F96CCA0EFAC9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E411ED26E7CD9E467E58F365715915E /* Pods-XXDownload_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XXDownload_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		351F8E59854BCD39585AB8A055AC2F52 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		3722C160F253C70B405E3EA6DF2EE426 /* XXDownloadPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXDownloadPath.h; path = XXDownload/Classes/XXDownloadPath.h; sourceTree = "<group>"; };
+		3AD96BACE609711D36DBCE4A9763A341 /* XXDownload.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XXDownload.xcconfig; sourceTree = "<group>"; };
 		3AF646E98F0F83AFBE48D6E95E7358C1 /* Pods-XXDownload_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-XXDownload_Tests.modulemap"; sourceTree = "<group>"; };
 		445BD28FD5EEE1F210D865E7808480E7 /* Pods-XXDownload_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XXDownload_Example.release.xcconfig"; sourceTree = "<group>"; };
-		48026AC537E5640B79786F9452F502CF /* XXDownloadTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXDownloadTask.h; path = XXDownload/Classes/XXDownloadTask.h; sourceTree = "<group>"; };
 		4B97A597AFE8B5A90EDFF8560393C46B /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		4DAF6881CBC8F512290F95EEAFF433EC /* XXDownload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXDownload.h; path = XXDownload/Classes/XXDownload.h; sourceTree = "<group>"; };
 		50D0039F3D89EC8AAF4545FAB9DDAE25 /* Pods-XXDownload_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XXDownload_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5996ACE99B29EF92981936A6F85D69D8 /* XXDownloadPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XXDownloadPath.m; path = XXDownload/Classes/XXDownloadPath.m; sourceTree = "<group>"; };
-		5A6D755D7E0E838CC4396390949A3CCA /* XXDownload.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = XXDownload.modulemap; sourceTree = "<group>"; };
+		53A63244143F22744E15EFC33010B59D /* XXDownloadTaskDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXDownloadTaskDelegate.h; path = XXDownload/Classes/XXDownloadTaskDelegate.h; sourceTree = "<group>"; };
+		54E8EB69F2DEF623E9DB37AAEF433E6C /* XXDownloadTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXDownloadTask.h; path = XXDownload/Classes/XXDownloadTask.h; sourceTree = "<group>"; };
+		5BD8CEB2222289B0CCF3CD675345BEAA /* XXDownloadManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXDownloadManager.h; path = XXDownload/Classes/XXDownloadManager.h; sourceTree = "<group>"; };
 		607A89A8704F6BD6882B027B4F14AB00 /* Pods-XXDownload_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XXDownload_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		62585B63EC2DF3D5099E86C42F07F294 /* XXDownloadPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXDownloadPath.h; path = XXDownload/Classes/XXDownloadPath.h; sourceTree = "<group>"; };
+		609CF41F6B56EAFD80A38E186C84AF28 /* XXDownload-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XXDownload-dummy.m"; sourceTree = "<group>"; };
+		6556428F50D7FF60093D379F47FEB0CB /* XXDownloadModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XXDownloadModel.m; path = XXDownload/Classes/XXDownloadModel.m; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6878B7382124FC12F5115ADA9E68B3ED /* XXDownloadModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XXDownloadModel.m; path = XXDownload/Classes/XXDownloadModel.m; sourceTree = "<group>"; };
-		692ADEEB99666597F61303E1F1483FB4 /* XXDownloadTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XXDownloadTool.m; path = XXDownload/Classes/XXDownloadTool.m; sourceTree = "<group>"; };
-		6A88E20F7E095CE04AA4BEAF8D0B6E9C /* NSData+NSURLSessionResumeData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+NSURLSessionResumeData.m"; path = "XXDownload/Classes/NSData+NSURLSessionResumeData.m"; sourceTree = "<group>"; };
 		6CFEEF64A76609C0E88017B38B7E12DA /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		6E378804BF559F9EEAB2F0EA0AD4EC7A /* XXDownloadModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXDownloadModel.h; path = XXDownload/Classes/XXDownloadModel.h; sourceTree = "<group>"; };
 		73E08DD3F409CC910BDF9AAC0E1BEB35 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		756129A41B772E71AC607E869FBA4149 /* XXDownloadTaskSetUpDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXDownloadTaskSetUpDelegate.h; path = XXDownload/Classes/XXDownloadTaskSetUpDelegate.h; sourceTree = "<group>"; };
 		75E5778742327802F6D9BAB3E8889E08 /* Pods-XXDownload_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XXDownload_Example-frameworks.sh"; sourceTree = "<group>"; };
 		774678108D22A09213789D973E2051AC /* FMDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-umbrella.h"; sourceTree = "<group>"; };
-		81309FDE618ADAF6ED7BD9A878BBE5B7 /* XXDownload-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XXDownload-dummy.m"; sourceTree = "<group>"; };
-		8693141C4F8EE5AD4DBB3EE1DB49CB1F /* XXDownloadTaskSetUpDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXDownloadTaskSetUpDelegate.h; path = XXDownload/Classes/XXDownloadTaskSetUpDelegate.h; sourceTree = "<group>"; };
-		889BC34C5F7EE5882F1A3E8F31C62060 /* XXDownloadTaskDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXDownloadTaskDelegate.h; path = XXDownload/Classes/XXDownloadTaskDelegate.h; sourceTree = "<group>"; };
+		7EC8D72BBE05C2484707116C35787326 /* XXDownloadTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXDownloadTool.h; path = XXDownload/Classes/XXDownloadTool.h; sourceTree = "<group>"; };
+		876DD418646A3F7AC9E5F07617C41337 /* XXDownload.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = XXDownload.modulemap; sourceTree = "<group>"; };
 		8DCBFFC3DB896E46921C92A5F270F7A1 /* Pods-XXDownload_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XXDownload_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8DF62A1F971FFFC84C36F474CF296297 /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95420AB8A393B435D026D8D4137781CF /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FMDB.framework; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98FCE526690655D112CD420492816D98 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FE1D7ECDC30029FF356A44DEB90DF8D /* XXDownloadEnum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXDownloadEnum.h; path = XXDownload/Classes/XXDownloadEnum.h; sourceTree = "<group>"; };
 		A2D2F8382360C935E0097F1CB2E26820 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
 		A82124697E95B25065BF5AC6D962526C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA871CE0DC2454CB6F20BA3B9394581B /* XXDownloadTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXDownloadTool.h; path = XXDownload/Classes/XXDownloadTool.h; sourceTree = "<group>"; };
 		AE050C615521545FF5F5B8990FCDC43B /* Pods-XXDownload_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XXDownload_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		B22114E7098BF8E52F899CCE1A91E6FE /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
-		B4BDC5BE831DA6E1116D633E72B4D188 /* XXDownloadManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XXDownloadManager.m; path = XXDownload/Classes/XXDownloadManager.m; sourceTree = "<group>"; };
 		B97CC7F7ED98D85D31663DDFAF034BBC /* FMDB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FMDB.modulemap; sourceTree = "<group>"; };
 		BDB85630887390AD9FAD48A407EBB4B9 /* Pods-XXDownload_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XXDownload_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		C42DABA58E9C80CD844C8ECD46DB593F /* XXDownloadManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXDownloadManager.h; path = XXDownload/Classes/XXDownloadManager.h; sourceTree = "<group>"; };
+		BE10375A309715880157569286577B39 /* XXDownloadTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XXDownloadTool.m; path = XXDownload/Classes/XXDownloadTool.m; sourceTree = "<group>"; };
 		C4BBD76359D36C69E5804A290D1C5ED2 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
 		C5BF3ABBEAD194FAFA80D41CCD0A8E1C /* Pods-XXDownload_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XXDownload_Tests-umbrella.h"; sourceTree = "<group>"; };
 		C80DA57F8CD6FA6C1FE9516FC1FCBB41 /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
-		D0D01C04A22DB77154D919DF6B5EB2C1 /* XXDownload-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XXDownload-umbrella.h"; sourceTree = "<group>"; };
+		CBA4FC850E144D46AEC4F8718BE1DFF8 /* XXDownloadPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XXDownloadPath.m; path = XXDownload/Classes/XXDownloadPath.m; sourceTree = "<group>"; };
+		CD2AB9BF8F595860F5EAE7F751AA740E /* XXDownload-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XXDownload-umbrella.h"; sourceTree = "<group>"; };
 		D5085BA3C5279C337F6D921E5CAFB1FC /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
-		D57F9E1E26A603CE81D4B715A7E16F17 /* XXDownload-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XXDownload-prefix.pch"; sourceTree = "<group>"; };
 		D81CD2F5EB431F07B61F57EC70CD4E7E /* Pods-XXDownload_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XXDownload_Tests-resources.sh"; sourceTree = "<group>"; };
 		DBBD5BAE36F640A3B124E8EB4B97F9D2 /* Pods-XXDownload_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-XXDownload_Example.modulemap"; sourceTree = "<group>"; };
 		E8786B9ED498E91BC66506802CE14788 /* Pods-XXDownload_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XXDownload_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		E9719AD706BEC0E429C19431BADFD5E1 /* NSData+NSURLSessionResumeData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+NSURLSessionResumeData.h"; path = "XXDownload/Classes/NSData+NSURLSessionResumeData.h"; sourceTree = "<group>"; };
+		ECCA720FDE7FC9FC02D34AF39CE36B72 /* XXDownloadManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XXDownloadManager.m; path = XXDownload/Classes/XXDownloadManager.m; sourceTree = "<group>"; };
 		ED48C0E1AA39302CCDD55032B7544B36 /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
 		EF1F75A18C22B1A86EEE68D5F1FAB496 /* Pods_XXDownload_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XXDownload_Tests.framework; path = "Pods-XXDownload_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFABCE9CB7F4CE8BC9EA5F81BF780E6D /* XXDownloadModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXDownloadModel.h; path = XXDownload/Classes/XXDownloadModel.h; sourceTree = "<group>"; };
 		F1F546D17BEE96A3AC80F5733BACB23C /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
 		F2C94C8E5247E1D0D2476F7F7009E3D6 /* Pods-XXDownload_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XXDownload_Tests-dummy.m"; sourceTree = "<group>"; };
 		F32F65CB14B48B9CD84CDB2FEFED144C /* Pods_XXDownload_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XXDownload_Example.framework; path = "Pods-XXDownload_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F952689D630C9B1F7B34E32C22F3801D /* XXDownloadEnum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XXDownloadEnum.h; path = XXDownload/Classes/XXDownloadEnum.h; sourceTree = "<group>"; };
 		FEF0B1BEF2A47F84B09BB3A7C15C37EA /* Pods-XXDownload_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XXDownload_Example-resources.sh"; sourceTree = "<group>"; };
 		FF81B6FF84AB964C39E45CAD879534C3 /* Pods-XXDownload_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XXDownload_Example-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,59 +177,43 @@
 			path = FMDB;
 			sourceTree = "<group>";
 		};
-		3C2647D76C04BB003EC2DF0DD32162D9 /* XXDownload */ = {
+		334BADF2AA87C6EB53DCAC00C07BA4B1 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E9719AD706BEC0E429C19431BADFD5E1 /* NSData+NSURLSessionResumeData.h */,
-				6A88E20F7E095CE04AA4BEAF8D0B6E9C /* NSData+NSURLSessionResumeData.m */,
-				165134110744678EFE52B74F0A642D28 /* XXDownload.h */,
-				1A3E06061376DE0DC10FACF572ECCEE8 /* XXDownloadDBDelegate.h */,
-				F952689D630C9B1F7B34E32C22F3801D /* XXDownloadEnum.h */,
-				C42DABA58E9C80CD844C8ECD46DB593F /* XXDownloadManager.h */,
-				B4BDC5BE831DA6E1116D633E72B4D188 /* XXDownloadManager.m */,
-				EFABCE9CB7F4CE8BC9EA5F81BF780E6D /* XXDownloadModel.h */,
-				6878B7382124FC12F5115ADA9E68B3ED /* XXDownloadModel.m */,
-				62585B63EC2DF3D5099E86C42F07F294 /* XXDownloadPath.h */,
-				5996ACE99B29EF92981936A6F85D69D8 /* XXDownloadPath.m */,
-				48026AC537E5640B79786F9452F502CF /* XXDownloadTask.h */,
-				1D2F076C79D7334CDFDF23810E4725F7 /* XXDownloadTask.m */,
-				889BC34C5F7EE5882F1A3E8F31C62060 /* XXDownloadTaskDelegate.h */,
-				8693141C4F8EE5AD4DBB3EE1DB49CB1F /* XXDownloadTaskSetUpDelegate.h */,
-				AA871CE0DC2454CB6F20BA3B9394581B /* XXDownloadTool.h */,
-				692ADEEB99666597F61303E1F1483FB4 /* XXDownloadTool.m */,
-				7607C9C3BA1EB17628AECB0745A9644B /* Support Files */,
-			);
-			name = XXDownload;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		6DE70A987D235ECD7E8E8E08A89AF9A7 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3C2647D76C04BB003EC2DF0DD32162D9 /* XXDownload */,
+				673E566B4CAC06C4F16B917CFEF2D311 /* XXDownload */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		7607C9C3BA1EB17628AECB0745A9644B /* Support Files */ = {
+		673E566B4CAC06C4F16B917CFEF2D311 /* XXDownload */ = {
 			isa = PBXGroup;
 			children = (
-				21EA066299EF3A77D09A62D9A0CF4AE7 /* Info.plist */,
-				5A6D755D7E0E838CC4396390949A3CCA /* XXDownload.modulemap */,
-				2A6468342D48E29E2BCFC10C8D2F656C /* XXDownload.xcconfig */,
-				81309FDE618ADAF6ED7BD9A878BBE5B7 /* XXDownload-dummy.m */,
-				D57F9E1E26A603CE81D4B715A7E16F17 /* XXDownload-prefix.pch */,
-				D0D01C04A22DB77154D919DF6B5EB2C1 /* XXDownload-umbrella.h */,
+				4DAF6881CBC8F512290F95EEAFF433EC /* XXDownload.h */,
+				242F200276007EDBAB561114E2D8E9EB /* XXDownloadDBDelegate.h */,
+				9FE1D7ECDC30029FF356A44DEB90DF8D /* XXDownloadEnum.h */,
+				5BD8CEB2222289B0CCF3CD675345BEAA /* XXDownloadManager.h */,
+				ECCA720FDE7FC9FC02D34AF39CE36B72 /* XXDownloadManager.m */,
+				6E378804BF559F9EEAB2F0EA0AD4EC7A /* XXDownloadModel.h */,
+				6556428F50D7FF60093D379F47FEB0CB /* XXDownloadModel.m */,
+				3722C160F253C70B405E3EA6DF2EE426 /* XXDownloadPath.h */,
+				CBA4FC850E144D46AEC4F8718BE1DFF8 /* XXDownloadPath.m */,
+				54E8EB69F2DEF623E9DB37AAEF433E6C /* XXDownloadTask.h */,
+				144428C1AC498F2EC26036F504D9BF63 /* XXDownloadTask.m */,
+				53A63244143F22744E15EFC33010B59D /* XXDownloadTaskDelegate.h */,
+				756129A41B772E71AC607E869FBA4149 /* XXDownloadTaskSetUpDelegate.h */,
+				7EC8D72BBE05C2484707116C35787326 /* XXDownloadTool.h */,
+				BE10375A309715880157569286577B39 /* XXDownloadTool.m */,
+				A9F7A485E3F3FB1DABCBD85389D4F037 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/XXDownload";
+			name = XXDownload;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				6DE70A987D235ECD7E8E8E08A89AF9A7 /* Development Pods */,
+				334BADF2AA87C6EB53DCAC00C07BA4B1 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				BFB8C92E749ED180124155E2270474D2 /* Pods */,
 				9C800388EC52F1F2840FE46FCF685E06 /* Products */,
@@ -268,6 +248,20 @@
 			);
 			name = "Pods-XXDownload_Tests";
 			path = "Target Support Files/Pods-XXDownload_Tests";
+			sourceTree = "<group>";
+		};
+		A9F7A485E3F3FB1DABCBD85389D4F037 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				248445A584684010B5A2F96CCA0EFAC9 /* Info.plist */,
+				876DD418646A3F7AC9E5F07617C41337 /* XXDownload.modulemap */,
+				3AD96BACE609711D36DBCE4A9763A341 /* XXDownload.xcconfig */,
+				609CF41F6B56EAFD80A38E186C84AF28 /* XXDownload-dummy.m */,
+				21129F835D4BFA404ABAD4B73F173589 /* XXDownload-prefix.pch */,
+				CD2AB9BF8F595860F5EAE7F751AA740E /* XXDownload-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/XXDownload";
 			sourceTree = "<group>";
 		};
 		B7ADE86BD1C1E36B1DE5372BFA4CDC0F /* Support Files */ = {
@@ -356,22 +350,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		35D7DA18A8E900E4A2C37084E0E26645 /* Headers */ = {
+		376700075D246CDB1E509BA388FDA127 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				868B11FD0DECC3DC9E065438C39CCA3B /* NSData+NSURLSessionResumeData.h in Headers */,
-				7136FFABE71C615F39248C11ED883253 /* XXDownload-umbrella.h in Headers */,
-				ABEBF68E4A2791C3E8E1EED1E2094748 /* XXDownload.h in Headers */,
-				CC1D9C631844BBEC8E19CA7A19F09FB8 /* XXDownloadDBDelegate.h in Headers */,
-				B5E68AA24A94BF7FDC5CFEBF1E110634 /* XXDownloadEnum.h in Headers */,
-				7A573E06A44D061E5D67C2E53B8B9994 /* XXDownloadManager.h in Headers */,
-				7D968B526B5918973E01BF0B670331D2 /* XXDownloadModel.h in Headers */,
-				08F18F38BECA9AAAAD490FF524D76E8B /* XXDownloadPath.h in Headers */,
-				97AAD37D0F8DD2D2702781336C13D026 /* XXDownloadTask.h in Headers */,
-				F95D858A5E9BE37C92C8F5409F356449 /* XXDownloadTaskDelegate.h in Headers */,
-				DB2F944402904E93AF2B5F2F97FD8A1A /* XXDownloadTaskSetUpDelegate.h in Headers */,
-				B7788CF625AF6362F3EF9DA2D22F2ED2 /* XXDownloadTool.h in Headers */,
+				EED430B0EDEAC5AAEC69EE5DDF2C655E /* XXDownload-umbrella.h in Headers */,
+				6CF90E3E7B97A954621E9E0077EBD8E5 /* XXDownload.h in Headers */,
+				EB635D38F2238599164F667B3562251A /* XXDownloadDBDelegate.h in Headers */,
+				B3B848403123CC2A02015855F09C54D7 /* XXDownloadEnum.h in Headers */,
+				3CB5CD2341365CAD9266B626CFB086C4 /* XXDownloadManager.h in Headers */,
+				529A37DFC226A0B6D27554802D0BA215 /* XXDownloadModel.h in Headers */,
+				02DE5232A935A1A5F0D1115A2FE86BC2 /* XXDownloadPath.h in Headers */,
+				52A05F4164A98A8A4503545D6AF58FC8 /* XXDownloadTask.h in Headers */,
+				14FC51217384BB24AEBBE8785334ED2F /* XXDownloadTaskDelegate.h in Headers */,
+				6969CDBCB0152E5662BA523109731E0E /* XXDownloadTaskSetUpDelegate.h in Headers */,
+				102B4F37FAE46609AE64B7C66E8D0F7C /* XXDownloadTool.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,9 +458,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95ADAFB427ED5AF6B67FB175695A4849 /* Build configuration list for PBXNativeTarget "XXDownload" */;
 			buildPhases = (
-				9FF6A315DB509D95F962951F050F95A1 /* Sources */,
+				D30637539EDFB962C1F06E12A6649E9D /* Sources */,
 				AE666325553BBA2C516E6C6F2587A920 /* Frameworks */,
-				35D7DA18A8E900E4A2C37084E0E26645 /* Headers */,
+				376700075D246CDB1E509BA388FDA127 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -537,17 +530,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FF6A315DB509D95F962951F050F95A1 /* Sources */ = {
+		D30637539EDFB962C1F06E12A6649E9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7EE4C81614C7156ADB12C99F02CEAE0 /* NSData+NSURLSessionResumeData.m in Sources */,
-				7024B2E444B4E8D9224B0B4F522C69CA /* XXDownload-dummy.m in Sources */,
-				2BE763C5FB3DD5A9C274594E4F612327 /* XXDownloadManager.m in Sources */,
-				815468DBC32DC792076F566EDF122571 /* XXDownloadModel.m in Sources */,
-				E2E712A05B743BDE0445B5E6CA77DDDD /* XXDownloadPath.m in Sources */,
-				F7BFB87B6DD2845C51C0778BCA5599D2 /* XXDownloadTask.m in Sources */,
-				90395B21513D67F3734D744E3A10019F /* XXDownloadTool.m in Sources */,
+				2C92BC50D7F8C15F0FC181BC6B934E3D /* XXDownload-dummy.m in Sources */,
+				B02FC6A57F2A7ECC552DA9E77845BF25 /* XXDownloadManager.m in Sources */,
+				DE6A27D4119A2C82311D79A5965EF621 /* XXDownloadModel.m in Sources */,
+				2E4D84EFCA3472BC0A56E1626854837C /* XXDownloadPath.m in Sources */,
+				A1CBAFFC0C962714C956B935D9A57CFB /* XXDownloadTask.m in Sources */,
+				BCF09758118286EB1E5883F3A8C6A9B1 /* XXDownloadTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,7 +657,7 @@
 		};
 		33ACB8B6B518944F88455CA9C367281C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A6468342D48E29E2BCFC10C8D2F656C /* XXDownload.xcconfig */;
+			baseConfigurationReference = 3AD96BACE609711D36DBCE4A9763A341 /* XXDownload.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -845,7 +837,7 @@
 		};
 		C3E08D6F80983270CA192A2435344715 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A6468342D48E29E2BCFC10C8D2F656C /* XXDownload.xcconfig */;
+			baseConfigurationReference = 3AD96BACE609711D36DBCE4A9763A341 /* XXDownload.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

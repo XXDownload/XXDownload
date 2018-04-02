@@ -104,6 +104,7 @@ static XXDownloadManager *_instance = nil;
         
         [[XXDownloadTool sharedTool] pauseDownloadWithTask:task];
     }
+    [self saveDownloading];
 }
 - (void)saveDownloading {
     

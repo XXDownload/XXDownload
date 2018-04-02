@@ -10,7 +10,6 @@
 #define _XXDownload_
 
 
-#import "NSData+NSURLSessionResumeData.h"
 #import "XXDownloadDBDelegate.h"
 #import "XXDownloadEnum.h"
 #import "XXDownloadManager.h"

@@ -6,8 +6,6 @@
 //  Copyright © 2017年 wanxue. All rights reserved.
 //
 #import "XXDownloadTool.h"
-#import "NSData+NSURLSessionResumeData.h"
-
 
 @interface XXDownloadTool ()<NSURLSessionDelegate,NSURLSessionDownloadDelegate>
 
@@ -70,8 +68,7 @@
     NSData *partData = [task originPartData];
     if (partData) {
         
-        NSData *rightData = [partData rightResumeDataWithUrlString:task.model.taskUrl];
-        task.downloadTask = [self.session downloadTaskWithResumeData:rightData];
+        task.downloadTask = [self.session downloadTaskWithResumeData:partData];
         [task.downloadTask resume];
         
     } else {
@@ -151,8 +148,7 @@
                     
                     [dTask setUpPartData:resumeData];
                 }
-                NSData *rightData = [resumeData rightResumeDataWithUrlString:dTask.model.taskUrl];
-                dTask.downloadTask = [self.session downloadTaskWithResumeData:rightData];
+                dTask.downloadTask = [self.session downloadTaskWithResumeData:resumeData];
                 [dTask.downloadTask resume];
                 
             } else {

@@ -10,7 +10,6 @@
 #endif
 #endif
 
-#import "NSData+NSURLSessionResumeData.h"
 #import "XXDownload.h"
 #import "XXDownloadDBDelegate.h"
 #import "XXDownloadEnum.h"
