@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'XXDownload'
-  s.version          = '0.2.2'
+  s.version          = '0.2.3'
   s.summary          = 'This is a download tool'
   s.description      = 'description'
   s.homepage         = 'https://github.com/XXDownload/XXDownload'

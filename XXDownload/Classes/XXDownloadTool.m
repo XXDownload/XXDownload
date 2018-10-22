@@ -252,7 +252,7 @@ expectedTotalBytes:(int64_t)expectedTotalBytes {
         
         NSString *bundeId = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleIdentifier"];
         NSURLSessionConfiguration *configure = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:bundeId];
-        
+        configure.sharedContainerIdentifier = @"wanxue";
         session = [NSURLSession sessionWithConfiguration:configure
                                                 delegate:self
                                            delegateQueue:nil];
